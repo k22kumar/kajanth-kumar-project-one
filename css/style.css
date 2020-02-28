@@ -38,7 +38,11 @@ img {
 /* CHECK OUT STUFF FROM WEEEK 3 LOTS OF GOOD STYLING TIPS */
 
 
-
+small-titles {
+    font-family: 'Cormorant Garamond';
+    font-size: 3.5rem;
+    font-weight: 500;
+}
 
 
 a:visited {
@@ -227,7 +231,7 @@ margin-right: 20px;
     background-image: url("../assets/one-magazine-footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 355px;
+    height: 200px;
 }
 
 .badge {
@@ -246,7 +250,27 @@ text-align: center;
     background-color: #E3E3E3;
 }
 
+.newsletter-container {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.contact-info-container, .contact-links-container ul{
+    float: left;
+    width: 20%;
+}
+
+.contact-links-container ul {
+    text-align: right;
+}
+
+.footer-links a {
+    padding: 5px;
+}
+
 .copyright-container {
     background-color: #ACACAC;
     text-align: center;
 }
+
