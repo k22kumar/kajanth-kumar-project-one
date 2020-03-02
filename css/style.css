@@ -39,16 +39,11 @@ img {
     max-width: 100%;
 }
 
-
-/* CHECK OUT STUFF FROM WEEEK 3 LOTS OF GOOD STYLING TIPS */
-
-
 .badge h2, .featured-text h2, .highlight-text h2 {
     font-family: 'Cormorant Garamond';
     font-size: 3.5rem;
     font-weight: 500;
 }
-
 
 a:visited {
     color: #FCFCFC;
@@ -84,10 +79,6 @@ nav {
     position: relative;
 }
 
-.hamburger-menu {
-        display: none;
-    }
-
 .h1-container {
     position: relative;
     width: 100%;
@@ -110,6 +101,11 @@ nav {
     font-family: 'Cormorant Garamond';
     font-size: 4.9rem;
 }
+
+/* nav area */
+.hamburger-menu {
+        display: none;
+    }
 
 .logo {
     float: left;
@@ -163,6 +159,8 @@ nav {
     padding: 50px 0;
 }
 
+/* gallery area */
+
 .news-gallery li {
     float: left;
     margin-right: 20px;
@@ -173,6 +171,8 @@ nav {
 .news-gallery li:nth-child(3n) {
     margin-right: 0;
 }
+
+/* highlight area */
 
 .highlight-container {
     margin: 50px 0;
@@ -189,37 +189,42 @@ margin-right: 20px;
  width: calc(75% - 20px);
 }
 
-.highlight-text .buttons{
-    margin-bottom: 0;
-}
-
 .buttons {
     padding: 15px 25px;
     background-color: rgba(24, 51, 153, 0.78);
     float: left;
     width: 160px;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.highlight-text .buttons{
+    margin-bottom: 0;
+}
+
+.buttons:hover,
+.buttons:focus,
+.subscribe:hover,
+.subscribe:focus {
+    background-color: #ACACAC;
+    color: black;
 }
 
 /* featured section styles */
 
-.featured-section {
-    
-}
 
 .featured-text {
     width: 40%;
+    margin: 5%;
 }
 
 .left-text {
     float: left;
-    margin-left: 10%;
 }
 
 .right-text {
     float: right;
-    margin-right: 10%;
 }
 
 .featured-image {
@@ -258,7 +263,6 @@ margin: 8% 0;
 .badge  i {
     font-size: 5.5rem;
 }
-
 
 .badge i, .badge h2 {
     padding: 10px;
@@ -300,12 +304,13 @@ input {
 
 .subscribe {
     background-color: black;
-    color: white;
+    color: #FCFCFC;
     padding: 10px 25px;
     border: none;
     height: 100%;
     font-family: 'Cormorant Garamond';
     font-weight: 500;
+    transition: 0.3s;
 }
 
 /* footer contact area */
@@ -418,6 +423,7 @@ input {
 
     .featured-text {
         text-align: center;
+        margin: 50px 0;
     }
 
     .left-text, .right-text {
@@ -431,8 +437,40 @@ input {
     }
 
     .body-text {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
-    
 
+    /* footer styles */
+
+    /* banner area */
+
+    .banner {
+        height: 100%;
+        background-position-x: -1434px;
+    }
+
+    .badge, .subscribe, form input {
+        width: 100%;
+    }
+
+    .newsletter-container {
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .contact-info-container {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    form input {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+    .contact-links-container {
+        margin-top: 190px;
+    }
 }
